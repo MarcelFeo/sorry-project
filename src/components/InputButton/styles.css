@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 select {
@@ -16,7 +17,6 @@ select {
     height: 30px;
     padding: 5px;
     margin: 0;
-    margin-right: 10px;
     font-family: inherit;
     font-size: inherit;
     cursor: inherit;
@@ -29,6 +29,9 @@ button {
     background-color: #7451AB;
     color: #F5F3A7;
     border-radius: 5%;
+    margin-top: 15px;
+
+    transition: 0.5s;
 }
 
 button:hover {

@@ -13,14 +13,14 @@ export default function InputButton() {
     const json = await response.json();
 
     setData(json)
-    console.log(data);
+    console.log(data[0]);
   }
 
   return (
     <>
         <div className="containerInput">
             <div className="containerContentInput">
-                <select id="category" name="category" value={"family"} onChange={(e) => setValue(e.target.value)}>
+                <select id="category" name="category" value={value} onChange={(e) => setValue(e.target.value)}>
                     <option value="family">Family</option>
                     <option value="office">Office</option>
                     <option value="children">Children</option>
@@ -28,6 +28,11 @@ export default function InputButton() {
                     <option value="party">Party</option>
                 </select>
                 <button onClick={api}>Confirmar</button>
+                <div className="containerResponse">
+                    {data.map((item) => (
+                        <h1>{item.excuse}</h1>
+                    ))}
+                </div>
             </div>
         </div>
     </>
