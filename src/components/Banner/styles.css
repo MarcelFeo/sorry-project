@@ -1,0 +1,26 @@
+.container {
+    background-color: #F5F3A7;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 50%;
+}
+
+.containerContent {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+   margin: 0 auto;
+   padding: 5%;
+}
+
+.containerText {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+span {
+    color: #7451AB;
+}
