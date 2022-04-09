@@ -17,7 +17,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [x] React
 - [x] Javascript
 - [x] CSS
-- [x] Fetch
+- [x] Axios
 
 <br>
 
